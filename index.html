@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metafit</title>
+    <link rel="icon" href="IMG_GUIA-removebg-preview.png">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+    <body >
+        <nav>
+            <ul>
+                <li><a href="#a">Início</a></li>
+                    <li><a href="#b">Calculadora</a></li>
+                        <li><a href="#c">Curiosidades</a></li>
+                            <!-- <li><a href="#d">Contato</a></li> -->
+            </ul>
+        </nav>
+            <br><br>
+        <div class="main"  id="a">
+            <div id="title" class="tit">
+            </div>
+
+            <div  class="container">
+                <img src="IMG INICIAL SITE.png" alt="">
+            </div>
+                <br><br>
+            <div class="conteudo" >
+
+            <div id="title" class="tit">
+            </div>
+            
+                <h2 class="cores">O que significa IMC</h2>
+
+                    <p>IMC é a sigla de Índice de Massa Corporal, um parâmetro que é utilizado para avaliar se o peso está dentro do valor ideal para a altura. 
+
+                    Isso significa que, a partir do resultado do IMC é possível saber se a pessoa está acima ou abaixo do peso recomendado e também diagnosticar problemas de saúde como obesidade ou desnutrição.
+                    
+                    O IMC pode ser utilizado em crianças, adolescentes, adultos ou idosos. </p>
+            
+                <h2 class="cores">Por que é importante saber o IMC?</h2>
+
+                     <p>Saber o IMC é importante para verificar se o peso está de acordo com a altura da pessoa, além de ser importante para saber se existe risco de desenvolver alguma doença. No caso das crianças, o IMC é importante para saber se o desenvolvimento está de acordo com o esperado.
+
+                    Além disso, sabendo o IMC, é possível também verificar qual o peso ideal e, assim, saber se a pessoa está acima ou abaixo do peso recomendado para a sua altura. Veja como é feito o cálculo do peso ideal.</p>
+            
+                <h2 class="cores">O que fazer para melhorar o IMC?</h2>
+
+                        <p>Para melhorar o IMC, é importante verificar se está acima ou abaixo do peso considerado normal. Quando o IMC está na faixa de magreza, é importante consultar um nutricionista que fará uma avaliação completa, indicando um plano alimentar personalizado que priorize o ganho de peso de forma saudável. 
+
+                       Por outro lado, quando o IMC está na faixa do sobrepeso ou da obesidade, o nutricionista pode recomendar uma alimentação com redução de calorias. Além da dieta, normalmente também se recomenda a prática de atividade física regular, que ajudará a acelerar o metabolismo e facilitar a perda de peso, o que influencia diretamente no IMC.</p>
+                
+                <h2 class="cores">Limitações do IMC</h2>
+            
+                        <p>Embora seja uma ferramenta valiosa, o IMC não considera outros fatores importantes, como composição corporal, massa muscular e distribuição de gordura.
+                            Sempre que possível, o resultado de IMC deve ser interpretado por um profissional de saúde, como um nutricionista.</p>
+                
+                <h2 class="cores">Como Calcular o IMC</h2>
+
+                        <P>O IMC é calculado dividindo o peso (em kg) pela altura ao quadrado (em m), de acordo com a seguinte fórmula:              
+                            <p></p>IMC=altura×alturapeso​<p></p>
+
+                            O resultado do IMC é dado em kg/m².</P>
+            
+        
+            </div>
+
+            <div id="b"></div>
+
+            <div class="calculadora">
+            <div class="titulo">
+                <h1>
+                        Calculadora IMC
+                </h1>
+            </div >
+            <div class="imc">
+                    <div class="form-imc">
+                        <div class="inputs">
+                            <div class="peso">
+                                <label for="peso">Peso</label>
+                                <input id="peso" placeholder="ex: 69.2" name="peso" type="number" step="any">
+                            </div>
+                            <div class="altura">
+                                <label for="altura">Altura</label>
+                                <input id="altura" placeholder="ex: 1.70" name="altura" type="number" step="any">
+                            </div>
+                        </div>
+                        <div class="calc-button">
+                            <button id="calcular">Calcular</button>
+                        </div>
+                    </div>
+                    <div id="resultado" class="valorResult hidden">
+                        <p>Resultado</p>
+                        <h3 id="h3"></h3>
+                        <p id="p"></p>
+                    </div>
+                </div>
+                <div class="classificacao">
+                    <table class="tabela">
+                        <thead>
+                            <tr class="table-header">
+                                <th class="td-1 th-1">Classificações</th>
+                                <th class="td-2 th-2">IMC(kg/m²)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="tr1">
+                                <td class="td-1">Baixo Peso</td>
+                                <td class="td-2">0 a 18,5</td>
+                            </tr>
+                            <tr id="tr2">
+                                <td class="td-1">Peso Normal</td>
+                                <td class="td-2">18,5 a 24,9</td>
+                            </tr>
+                            <tr id="tr3">
+                                <td class="td-1">Excesso de Peso</td>
+                                <td class="td-2">25 a 29,9</td>
+                            </tr>
+                            <tr id="tr4">
+                                <td class="td-1">Obesidade Grau I</td>
+                                <td class="td-2">30 a 34,9</td>
+                            </tr>
+                            <tr id="tr5">
+                                <td class="td-1">Obesidade Grau II</td>
+                                <td class="td-2">35 a 39,9</td>
+                            </tr>
+                            <tr id="tr6">
+                                <td class="td-1">Obesidade Mórbida</td>
+                                <td class="td-2">≥ 40</td>
+                            </tr>
+                      </tbody>
+                    </table><br>
+                </div>
+            </div>
+            <Br>
+            <div  class="container" class="resultados">
+                <div class="conteudo"> <Strong>Resultado Da Calculadora IMC</Strong>
+                <div id="1" class="resultado hidden">
+                    <div class="bolinha yellow" ></div>
+                    <h3 >Peso baixo</h3>
+                        <p>
+                        Ao contrário do que algumas pessoas possam pensar, ter um peso abaixo do recomendável é tão ou mais prejudicial do que ter excesso de peso. 
+                        Possuir um IMC inferior a 19/20 pode ser um sinal importante de alguma patologia/comportamento subjacente.
+                        <br><br>
+                        Na origem de um peso baixo, podem estar vários fatores ou problemas, como:
+                        <br>
+                        <ul>
+                            <li>Privação alimentar;</li>
+                                <li>Distúrbios do comportamento alimentar, como a anorexia e a bulimia, por exemplo;</li>
+                                    <li>Doenças metabólicas, como o hipertiroidismo ou a diabetes, por exemplo;</li>
+                                        <li>Parasitas;</li>
+                                          <li>Doenças inflamatórias intestinais, como a Doença de Crohn, por exemplo;</li>
+                                             <li>Intolerâncias alimentares;</li>
+                                                 <li>Doenças hepáticas;</li>
+                                                    <li>Stress.</li>
+                        </ul>
+                        <br>
+                        Algumas consequências de um Índice de Massa Corporal baixo podem ser:
+                        <ul>
+                            <li>Queda de cabelo;</li>
+                                <li>Infertilidade;</li>
+                                    <li>Ausência de menstruação;</li>
+                                        <li>Fadiga;</li>
+                                            <li>Stress;</li>
+                                                <li>Ansiedade.</li>
+                        </ul>
+                            Quem tem peso baixo, deve consultar um médico, de modo a receber aconselhamento nutricional.
+                            Para ganhar peso de forma saudável e equilibrada, é importante fazer uma alimentação rica em nutrientes e calorias e praticar desporto, de forma a aumentar a massa muscular.
+                            </p>
+                </div>
+    
+                <div id="2" class="resultado hidden">
+                    <div class="bolinha green"></div>
+                        <h3>Peso normal</h3>
+                            <p>O peso normal é o peso ideal que cada pessoa deve ter, de acordo com a sua idade, género e outras variáveis. Para isso, de um modo genérico, deve ter-se um IMC entre 19 e 25. Isso significa que há um equilíbrio entre o peso e a altura.
+                            Para alcançar este objetivo, é importante fazer uma alimentação saudável e praticar exercício físico com regularidade.</p>
+                </div>
+    
+                <div id="3" class="resultado hidden">
+                    <div class="bolinha orange"></div>
+                        <h3>Excesso de peso</h3>
+                            <p>De um modo geral, o excesso de peso pode corresponder a um IMC entre 25 e 30. Esta é também considerada uma situação de pré-obesidade. Neste caso, é importante consultar um médico e um nutricionista, de maneira a evitar o risco de desenvolver doenças cardiovasculares e de evoluir para um quadro de obesidade.
+                            Além disso, é fundamental perceber qual a percentagem de massa gorda, de massa muscular e de água que o indivíduo tem.
+                            Nesta situação, é essencial desenhar um programa alimentar e medir zonas críticas do corpo, como a barriga, a cintura e o peito, de maneira a conseguir-se avaliar periodicamente os resultados da dieta e das mudanças de estilo de vida.</p>
+                </div>
+    
+                <div id="4" class="resultado hidden">
+                    <div class="bolinha red"></div>
+                        <h3>Obesidade</h3>
+                            <p>A obesidade é uma condição médica caracterizada pelo acúmulo excessivo de gordura corporal. Ela ocorre quando o consumo de calorias é maior do que o gasto energético, resultando em um desequilíbrio que leva ao ganho de peso.
+                            Diversos fatores contribuem para o desenvolvimento da obesidade. Entre eles:
+                        
+                            <p><strong>Dieta inadequada:</strong>Dieta inadequada: O consumo excessivo de alimentos ricos em calorias, gorduras e açúcares pode levar ao ganho de peso. Fast food, alimentos processados e bebidas açucaradas são frequentemente associados à obesidade.</p>
+                        
+                                <p><strong>Sedentarismo:</strong>Sedentarismo: A falta de atividade física regular é um fator significativo. Estilos de vida sedentários, como passar longas horas sentado ou inativo, contribuem para o problema. </p>
+                        
+                                    <p><strong>Genética:</strong>Genética: A predisposição genética desempenha um papel importante. Algumas pessoas têm maior probabilidade de ganhar peso com base em seus genes.</p>
+                        
+                                        <p> <strong>Fatores hormonais:</strong> Desequilíbrios hormonais podem afetar o metabolismo e o apetite. Por exemplo, a resistência à insulina está associada à obesidade.</p>
+
+                                            <p>A obesidade está ligada a várias condições de saúde, como doenças cardiovasculares (hipertensão, doença coronariana, AVC), diabetes tipo 2, apneia do sono, artrose e alguns tipos de câncer.</p>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+            <br>
+        
+        <div class="conteudo"  id="c" class="center">
+
+            <h2 class="cores">O que é obesidade?</h2>
+
+            <p >A obesidade é caracterizada como o excesso de gordura acumulada no corpo. O ganho de peso ocorre quando o consumo calórico é maior que seu gasto diário. Se esse comportamento é contínuo, há o aumento do Índice de Massa Corporal (IMC) — obtido pela divisão do peso pela altura ao quadrado de uma pessoa. O paciente é considerado obeso quando esse índice é igual ou superior a 30.</p>
+            <p>Existem diversos fatores que favorecem as chances de um indivíduo se tornar obeso, como:</p>
+
+                <p>    <strong>Má alimentação</strong> — o consumo excessivo de ultraprocessados, sódio, açúcar e alimentos com pouco valor nutricional estimula o ganho de peso;
+                     <p>    <strong>Sedentarismo</strong> — fazer pouca atividade física no dia a dia faz com que o gasto calórico seja menor (a Organização Mundial da Saúde (OMS) recomenda exercitar-se por cerca de 150 minutos semanais);
+                        <p>    <strong>Genética</strong> — indivíduos que têm parentes obesos de grau próximo, como pais e avós, podem carregar genes de predisposição à obesidade;
+                           <p>    <strong>Medicamentos</strong> — o acúmulo de gordura corporal e a retenção de líquido podem ser efeitos colaterais de alguns fármacos;
+                              <p>    <strong>Problemas Hormonais</strong> — o aumento dos níveis de cortisol e o hipotireoidismo favorecem o ganho de peso;
+                                  <p>    <strong>Transtornos Psicológicos</strong> — a depressão e a ansiedade, por exemplo, podem levar ao aumento do consumo de alimentos calóricos e à diminuição da atividade física;
+                                       <p>    <strong>Problemas Neurológicos</strong> — lesões em algumas regiões do cérebro, como o hipotálamo, também provocam o aumento da gordura corporal.</p>
+            
+            <h2 class="cores">Quais são as 4 principais consequências ligadas à obesidade?</h2>
+
+                <strong>hipertensão</strong>
+    
+                    <p>A hipertensão é uma doença cardiovascular causada pelo aumento da pressão arterial. Isso ocorre quando a tensão da circulação de sangue sobe consideravelmente, o que pode danificar as paredes das veias e artérias.
+                
+                     Um alto índice de gordura corporal se relaciona, também, a uma grande quantidade de triglicerídeos e colesterol LDL (conhecido como “colesterol ruim”). Esse aumento de lipídios no sangue pode comprometer a sua circulação e provocar a hipertensão. Por essa razão, pessoas obesas têm mais chances de desenvolver essa complicação que indivíduos com o IMC regular.
+                
+                    Sendo uma doença que acomete aproximadamente 25% da população adulta no Brasil, a hipertensão precisa ser devidamente tratada e acompanhada. Além disso, a perda de peso é um dos fatores que auxiliam na melhoria do quadro.</p>
+                        
+                <strong>Asma</strong>
+                
+                     <p>Outra doença crônica, a asma atinge o sistema respiratório e afeta cerca de 300 milhões de pessoas em todo o mundo. Cansaço, falta de ar e chiado no peito são apenas alguns dos sinais que surgem com esse transtorno. Os sintomas são ainda mais intensos na hora de dormir, ao fazer uma atividade física ou na presença de fatores alergênicos.
+                
+                     Um dos possíveis causadores da asma é a reação à leptina, uma proteína produzida principalmente pelo tecido adiposo — células responsáveis pelo armazenamento de gordura. Por isso, essa é uma das principais consequências da obesidade.</p>
+                
+                <strong>Apneia do Sono</strong>
+                
+                    <p>A apneia do sono é um problema que provoca barulhos e interrupções na respiração ao dormir. Como consequência, compromete a qualidade do sono, causando sonolência durante o dia, dificuldade de concentração e de raciocínio e redução da oferta de oxigênio no sistema nervoso, entre outros problemas. 
+                
+                    O excesso de peso é um dos fatores que favorecem o surgimento dessa doença, por dificultar a passagem de ar pelas vias respiratórias.</p> 
+                
+                <strong>Diabetes</strong>
+                
+
+                    <p>O aumento do peso é, na maioria das vezes, consequência de um gasto calórico menor que o consumo. Sendo assim, a energia não utilizada é estocada em forma de gordura. No entanto, o excesso de tecido adiposo interfere no funcionamento da insulina, hormônio cuja principal função é regular os níveis de açúcar na corrente sanguínea.
+                
+                     Quando há resistência à insulina, as chances de desenvolver diabetes do tipo 2 são maiores. Desse modo, essa doença é outra das graves consequências da obesidade, que compromete a qualidade de vida de um indivíduo e pode ter muitas complicações, como problemas de visão e cicatrização.
+                
+                    Por isso, fazer exames de check-up periodicamente e fazer o acompanhamento médico são atitudes indispensáveis para evitar complicações.</p>
+        
+            <h2 class="cores">Os Perigos da Obesidade</h2>
+
+                <p>A obesidade é uma condição em que o excesso de gordura corporal afeta negativamente a saúde. Aqui estão alguns dos principais riscos associados à obesidade:<p>
+            
+                    <strong>Doenças Cardiovasculares:</strong>
+    
+                        <p> A obesidade está fortemente correlacionada com o acúmulo de placas nas artérias coronárias, aumentando o risco de eventos cardiovasculares adversos, como infarto do miocárdio e acidente vascular cerebral. Além disso, a obesidade exerce pressão adicional sobre o coração, o que pode levar a uma disfunção cardíaca progressiva ao longo do tempo. </p>
+                    
+                    <strong>Diabetes Tipo 2</strong>
+
+                        <p>A obesidade está diretamente relacionada ao risco aumentado de desenvolver diabetes tipo 2. Quando não são realizadas intervenções que modifiquem a evolução da obesidade e da resistência à ação da insulina no organismo (como mudanças no estilo de vida e tratamentos farmacológicos), o indivíduo obeso pode desenvolver essa condição crônica. </p>
+                    
+                    <strong>Problemas Respiratórios</strong>
+
+                      <p>A obesidade exerce um impacto negativo significativo sobre os pulmões e vias respiratórias, amplificando o risco de doenças respiratórias crônicas e comprometendo a qualidade de vida. Ela está associada a condições como restrição da caixa torácica, inflamação sistêmica, apneia do sono e complicações em doenças respiratórias preexistentes. </p>
+
+                    <strong>Doenças Hepáticas</strong>
+
+                      <p>A obesidade está associada à esteatose hepática, também conhecida como fígado gorduroso, que pode levar a um quadro de inflamação ou esteatoepatite. Se não for tratada, essa condição pode resultar em morte celular e fibrose do fígado, tornando-se um grave problema de saúde pública</p>
+  
+
+                    <strong>Problemas Musculoesqueléticos</strong>
+
+                      <p>A obesidade está associada a lesões musculoesqueléticas, como hérnias de disco e síndrome do túnel do carpo, o que pode afetar negativamente a saúde dos músculos e ossos.</p>
+
+                    <strong>Câncer</strong>
+
+                      <p>A obesidade está associada a um risco aumentado de desenvolver vários tipos de câncer, incluindo esôfago, estômago, pâncreas, vesícula biliar, fígado, intestino, rins, mama (mulheres na pós-menopausa), ovário, endométrio, meningioma, tireoide e mieloma múltiplo. O excesso de gordura corporal provoca um estado de inflamação crônica e aumenta os níveis de determinados hormônios, promovendo o crescimento de células cancerígenas e aumentando as chances de desenvolvimento da doença.</p>   
+                    
+                    <strong>Problemas Digestivos</strong>
+
+                      <p>A obesidade está associada a uma maior incidência de doenças gastrointestinais, incluindo refluxo gastroesofágico, pancreatite, hérnias abdominais e esteatose hepática, o que pode afetar negativamente a saúde digestiva e a qualidade de vida. </p>    
+                      
+                    <strong>Saúde Menta</strong>
+
+                        <p>A obesidade não apenas afeta a saúde física, mas também pode desencadear problemas de saúde mental, como depressão, ansiedade e isolamento social, comprometendo a qualidade de vida das pessoas</p>
+
+                    <strong>Problemas Reprodutivos</strong>
+
+                        <p>A obesidade tem um impacto significativo na fertilidade feminina, afetando diversos aspectos da saúde reprodutiva. O excesso de peso pode levar a alterações hormonais e desafios na ovulação, além de potencialmente prejudicar a qualidade dos óvulos. Mulheres obesas também podem enfrentar maior risco de síndrome dos ovários policísticos, que afeta a ovulação e a fertilidade. </p>
+                        
+                    <strong>Redução da Expectativa de Vida</strong>
+    
+                        <p>A obesidade está associada a um risco aumentado de desenvolver doenças cardiovasculares, incluindo doença cardíaca e acidente vascular cerebral, o que, em média, reduz drasticamente a expectativa de vida de um indivíduo. Além disso, a obesidade mórbida pode cortar em até oito anos a expectativa de vida de uma pessoa e causar décadas de problemas de saúde. Portanto, prevenir e cuidar da obesidade são essenciais para mitigar esses riscos e promover uma vida mais saudável e longa</p>
+                            <br>
+                        <p>É importante adotar hábitos saudáveis, como alimentação balanceada e atividade física regular, para prevenir a obesidade e seus efeitos adversos. Consultar um profissional de saúde é fundamental para gerenciar o peso e promover a saúde geral.</p>
+        
+        </div>
+
+        <br>
+        <div class="container">
+            
+            <img src="IMG FINAL SITE.png" alt="">
+        </div>
+        <footer id="d">
+            &copy; Só eu posso mudar minha vida. Ninguém pode fazer isso por mim.
+        <!-- <ul class="redes-sociais">
+            <li><a href="link" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="link" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="link" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="link" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+        </ul> -->
+    </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
