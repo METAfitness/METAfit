@@ -14,6 +14,8 @@ const div1 = document.getElementById('1');
 const div2 = document.getElementById('2');
 const div3 = document.getElementById('3');
 const div4 = document.getElementById('4');
+const div5 = document.getElementById('5');
+const div6 = document.getElementById('6');
 
 
 function calcularIMC(pesoValue, alturaValue) {
@@ -27,6 +29,8 @@ function calcularIMC(pesoValue, alturaValue) {
     div2.classList.add("hidden");
     div3.classList.add("hidden");
     div4.classList.add("hidden");
+    div5.classList.add("hidden");
+    div6.classList.add("hidden");
     let imc;
 
     if (alturaValue && pesoValue) {
@@ -44,8 +48,12 @@ function calcularIMC(pesoValue, alturaValue) {
         div2.classList.remove("hidden");
     }else if(imc >= 25 && imc <= 29.9){
         div3.classList.remove("hidden");
-    }else {
+    }else if(imc >= 30 && imc <= 34.9){
         div4.classList.remove("hidden");
+    }else if(imc >= 35 && imc <= 39.9){
+        div5.classList.remove("hidden");
+    }else {
+        div6.classList.remove("hidden");
     }
 
     if (imc < 18.5) {
