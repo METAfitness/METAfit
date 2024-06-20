@@ -1,3 +1,81 @@
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClasse = "active";
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    animateLinks() {
+        this.navLinks.forEach((link, index) => {
+            console.log(index / 7 + 0.3);
+            link.style.animation
+                ? (link.style.animation = "")
+                : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+        });
+    }
+
+    handleClick() {
+        this.navList.classList.toggle(this.activeClasse);
+        this.animateLinks();
+    }
+
+    addClickEvent() {
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+
+    init() {
+        if (this.mobileMenu) {
+            this.addClickEvent();
+        }
+        return this;
+    }
+}
+
+const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li"
+);
+mobileNavbar.init();
+
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.querySelector(".videoimc");
+
+    
+    video.removeAttribute("controls");
+
+
+    video.addEventListener("click", function() {
+        video.setAttribute("controls", "controls");
+    });
+
+   
+    video.addEventListener("mouseenter", function() {
+        video.setAttribute("controls", "controls");
+    });
+
+  
+    video.addEventListener("mouseleave", function() {
+        if (!video.paused) {
+            video.removeAttribute("controls");
+        }
+    });
+
+   
+    video.addEventListener("pause", function() {
+        video.removeAttribute("controls");
+    });
+
+ 
+    video.addEventListener("play", function() {
+        video.setAttribute("controls", "controls");
+    });
+});
+
+
 const button = document.querySelector("#calcular");
 const altura = document.getElementById('altura');
 const peso = document.getElementById('peso');
@@ -88,3 +166,4 @@ button.addEventListener("click", (event) => {
     altura.value = '';
     peso.value = '';
 })
+
