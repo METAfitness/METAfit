@@ -7,7 +7,6 @@
 }
 
 body {
-    background-image: url('IMG FUNDO SITE.png');
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,7 +97,7 @@ nav {
 .cabecario {
     background-color: var(--primary-white);
     padding: 20px;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5em 1em var(--primary-green);
     margin: 20px;
     max-width: 90%;
 }
@@ -108,7 +107,7 @@ nav {
     padding: 20px;
     margin: 20px;
     max-width: 90%;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5em 1em var(--primary-green);
 }
 
 .conteudovideo {
